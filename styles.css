@@ -231,6 +231,10 @@
     }
 
     .donate {
-        width: 90%; /* Make button span most of the width */
+        width: 50%; /* Make button span most of the width */
+    }
+
+    .h2 { 
+        font-size: 5px;
     }
 }
