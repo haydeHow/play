@@ -223,7 +223,7 @@
 /* Media Query for iPhone Screens */
 @media screen and (max-width: 480px) {
     .top-container {
-        margin-top: 0px; /* Adjust margin for smaller screens */
+        margin-top: 50px; /* Adjust margin for smaller screens */
     }
 
     .date {
