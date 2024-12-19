@@ -1,100 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive iPhone-Friendly Site</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f4f4f4;
-            color: #333;
-            font-size: 16px;
-            line-height: 1.6;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            font-size: 2rem;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 600px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .container p {
-            margin-bottom: 20px;
-        }
-
-        button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-align: center;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
-            margin-top: 20px;
-            font-size: 0.9rem;
-            color: #666;
-            text-align: center;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.5rem;
-            }
-
-            button {
-                font-size: 0.9rem;
-                padding: 8px 16px;
-            }
-        }
-    </style>
+    <title>None</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Responsive Site</h1>
-    </header>
 
-    <div class="container">
-        <p>This is a sample responsive website designed to fit perfectly on iPhone screens and other devices.</p>
-        <p>The layout adjusts seamlessly based on the screen size.</p>
-        <button>Click Me</button>
+<body>
+
+    <div class="logo-container">
+        <img src="Free Crossfit.jpg" alt="Logo" class="oval-image">
     </div>
 
-    <footer>
-        &copy; 2024 My Responsive Site
-    </footer>
+    <div class="top-container">
+
+        <div id="date_api"></div>
+
+
+        <div class="payment-buttons">
+            <h4 class="donate">Donations❤️</h4>
+            <div class="payment-button paypal-button">
+                <a href="https://www.paypal.com" target="_blank" class="button-link">
+                    <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal Logo"
+                        class="paypal-logo">
+                </a>
+            </div>
+
+            <div class="payment-button stripe-button">
+                <a href="#" class="button-link">
+                    <img src="https://images.stripeassets.com/fzn2n1nzq965/HTTOloNPhisV9P4hlMPNA/cacf1bb88b9fc492dfad34378d844280/Stripe_icon_-_square.svg?q=80&w=1082"
+                        class="stripe-logo">
+                </a>
+            </div>
+
+
+            <div class="payment-button venmo-button">
+                <a href="#" class="button-link">
+                    <img src="https://images.ctfassets.net/gkyt4bl1j2fs/ym6BkLqyGjMBmiCwtM7AW/829bf561ea771c00839b484cb8edeebb/App_Icon.png?w=276&h=276&q=50&fm=webp&bg=transparent"
+                        class="venmo-logo">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="workout-container">
+        <div class="workout">
+            <h2>Warm-Up</h2>
+            <div id="warmup_description_api"></div>
+            <div id="warmup_movements"></div>
+        </div>
+        <div class="workout">
+            <h2>Strength</h2>
+            <div id="strength_description_api"></div>
+            <div id="strength_movements"></div>
+        </div>
+        <div class="workout">
+            <h2>Workout of the Day (WOD)</h2>
+            <div id="wod_description_api"></div>
+            <div id="wod_movements"></div>
+        </div>
+        <div class="workout">
+            <h2>Cool Down</h2>
+            <div id="cooldown_description_api"></div>
+            <div id="cooldown_movements"></div>
+        </div>
+    </div>
+    <footer>Stay active, stay healthy.</footer>
 </body>
+<script src="script.js"></script>
+
 </html>
