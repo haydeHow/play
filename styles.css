@@ -184,51 +184,53 @@
             margin-right: 20px;
         }
 
+.oval-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure it takes its own line */
+}
 
-        .oval-image {
-            width: 150px;
-            /* Adjust the width as needed */
-            height: 150px;
-            /* Adjust the height as needed */
-            object-fit: cover;
-            /* Ensures the image covers the oval shape */
-            border-radius: 50%;
-            /* Makes the image oval */
-        }
+.top-container {
+    width: 90%; /* Use a percentage-based width */
+    max-width: 600px; /* Optional: set a max-width for larger screens */
+    margin: 0 auto; /* Center the container */
+    margin-top: -50px; /* Adjust for your design */
+}
 
-        .top-container {
-            width: 600px;
-            /* Set the width of the container, e.g., 80% of the parent element */
-            margin-top: -80px;
-        }
+.date {
+    font-size: 1rem; /* Ensure font scales well */
+    margin-top: 20px; /* Replace top positioning */
+    margin-left: auto; /* Use margins for alignment */
+    margin-right: auto; /* Center align */
+    text-align: center; /* Center text */
+}
 
-        .date {
-            position: relative;
-            top: 100px;
-            left: 40px;
-        }
+.donate {
+    margin: 10px auto; /* Center the button */
+    height: auto; /* Adjust height for text content */
+    width: 80%; /* Make it adapt to screen width */
+    max-width: 200px; /* Optional: set a max-width */
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px 10px; /* Add padding for better touch targets */
+}
 
-        .donate {
-            position: relative;
-            margin-bottom: 7px;
-            margin-left: 29px;
-            height: 20px;
-            width: 110px;
-            background-color: black;
-            color: white;
-            border-radius: 4px;
-            text-align: center;
-        }
+/* Media Query for iPhone Screens */
+@media screen and (max-width: 480px) {
+    .top-container {
+        margin-top: -20px; /* Adjust margin for smaller screens */
+    }
 
+    .date {
+        font-size: 0.9rem; /* Scale down font size */
+    }
 
-        /* Responsive Design */
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.5rem;
-            }
-
-            button {
-                font-size: 0.9rem;
-                padding: 8px 16px;
-            }
-        }
+    .donate {
+        width: 90%; /* Make button span most of the width */
+    }
+}
